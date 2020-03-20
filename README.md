@@ -29,6 +29,8 @@
 	<a href="https://rayanfam.com/topics/hypervisor-from-scratch-part-6/">Part 6</a>
     ·
 	<a href="https://rayanfam.com/topics/hypervisor-from-scratch-part-7/">Part 7</a>
+    ·
+	<a href="https://rayanfam.com/topics/hypervisor-from-scratch-part-8/">Part 8 (not published yet)</a>
   </p>
 </p>
 
@@ -62,8 +64,12 @@ Available at: https://rayanfam.com/tutorials
 (https://rayanfam.com/topics/hypervisor-from-scratch-part-6/)
 
 
-**Part 7 - Using EPT & Page-Level Monitoring Features** (not published)
+**Part 7 - Using EPT & Page-Level Monitoring Features** 
 (https://rayanfam.com/topics/hypervisor-from-scratch-part-7/)
+
+
+**Part 8 - How To Do Magic With Hypervisor!** (not published yet)
+(https://rayanfam.com/topics/hypervisor-from-scratch-part-8/)
 
 ## Note
 
@@ -75,10 +81,33 @@ Note: Please keep in mind that hypervisors change during the time because new fe
 
 In order to compile this project you have to use Windows Driver Kit (WDK), first install Visual Studio then install WDK then you can compile it.
 
+## Environment
+
+All the drivers are tested on both physical-machine and VMWare's nested virtualization, from part 8 support to Hyper-V is added, means that you can test part 8 and newer parts on physical-machine, VMWare's nested virtualization and Hyper-V's nested virtualization.
+
 
 ## Other Articles & Projects
 
 If you want to know more about the hypervisors, you can visit : https://github.com/Wenzel/awesome-virtualization
+
+## Credits
+ This series is written by :<br />
+- <a href="https://twitter.com/Intel80x86">Sina Karvandi</a><br />
+- <a href="https://twitter.com/PetrBenes">Petr Beneš</a><br />
+
+ Special Thanks to these guys for their helps and contributions :<br />
+- <a href="https://twitter.com/aionescu">Alex Ionescu</a><br />
+- <a href="https://twitter.com/standa_t">Satoshi Tanda</a><br />
+- <a href="https://twitter.com/Liran_Alon">Liran Alon</a><br />
+- <a href="https://twitter.com/gerhart_x">gerhart</a><br />
+- <a href="https://twitter.com/daax_rynd">Daax Rynd</a><br />
+- <a href="https://twitter.com/LordNoteworthy">Noteworthy</a><br />
+- <a href="https://twitter.com/ivansprundel">ivs</a><br />
+- <a href="https://twitter.com/honorary_bot">Artem Shishkin</a><br />
+- <a href="https://twitter.com/Shahriare8">Shahriar</a><br />
+- <a href="https://twitter.com/amdgzi">Ahmad</a><br />
+- ...and many other people who helped to solve the problems</a><br />
+
 
 <!-- LICENSE -->
 ## License
