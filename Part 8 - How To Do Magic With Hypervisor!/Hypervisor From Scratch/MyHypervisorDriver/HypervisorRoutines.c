@@ -6,6 +6,7 @@
 #include "HypervisorRoutines.h"
 #include "Invept.h"
 #include "InlineAsm.h"
+#include "Vpid.h"
 #include "Vmcall.h"
 #include "Dpc.h"
 
@@ -247,7 +248,8 @@ VOID HvHandleControlRegisterAccess(PGUEST_REGS GuestState)
 			break;
 		case 3:
 			__vmx_vmwrite(GUEST_CR3, (*RegPtr & ~(1ULL << 63)));
-			InveptSingleContext(EptState->EptPointer.Flags);
+			// InveptSingleContext(EptState->EptPointer.Flags); (changed, look for "Update 1" at the 8th part for more detail)
+			InvvpidSingleContext(VPID_TAG);
 			break;
 		case 4:
 			__vmx_vmwrite(GUEST_CR4, *RegPtr);
